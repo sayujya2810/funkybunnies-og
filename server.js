@@ -16,7 +16,7 @@ app.use(require('./routes/auth'))
 app.use(cors)
 
 
-const database  = process.env.MONGODB_URI
+const database  = 'mongodb+srv://admin:admin1234@cluster0.dj88z.mongodb.net/funkybunnies?retryWrites=true&w=majority'
 
 
 // app.get('/find', async(req,res) => {
@@ -55,7 +55,7 @@ mongoose.connect( database ,{
 
 
 
-app.listen( process.env.PORT || 5000, ()=>{
+app.listen( 5000, ()=>{
     // myList = []
     // console.log("before: ", myList)
     // getAddresses(myList)
